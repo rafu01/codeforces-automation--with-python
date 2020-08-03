@@ -1,5 +1,5 @@
 # codeforces-automation--with-python
-This script will help you to download your codeforces accepted codes to your local directory. It scrapes your submission page and copies all the accepted codes and writes them as a .cpp file. <br/> <br/>
+Keeping your solved problems in your github is a great way to showcase your work. But copy pasting all your submissions is hectic and time consuming when you have hundreds of submission. This script will help you to download your codeforces accepted codes to your local directory. It scrapes your submission page and copies all the accepted codes and writes them as a .cpp file. <br/> <br/>
 Featues: <br/>
 1. It doesn't require you to sign up so it's safe <br/>
 2. Saves the file with proper name <br/> <br/>
@@ -20,4 +20,4 @@ Step 7: ENJOY! <br/>
 <br/>
 It saves the file as .cpp file if you code in java just find this line and change the file type from .cpp to .java <br/>
 eg: file = open(fileName+" .cpp", "w+") to file = open(fileName+" .cpp", "w+") <br/>
-You're good to go! 
+You're good to go! Now you can easily upload them to your github

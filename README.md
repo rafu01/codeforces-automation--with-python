@@ -19,5 +19,5 @@ Step 6: run the script and set back <br/>
 Step 7: ENJOY! <br/> 
 <br/>
 It saves the file as .cpp file if you code in java just find this line and change the file type from .cpp to .java <br/>
-eg: file = open(fileName+" .cpp", "w+") to file = open(fileName+" .cpp", "w+") <br/>
+eg: file = open(fileName+" .cpp", "w+") to file = open(fileName+" .java", "w+") <br/>
 You're good to go! Now you can easily upload them to your github

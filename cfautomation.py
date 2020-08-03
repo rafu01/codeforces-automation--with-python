@@ -4,8 +4,9 @@ import pyperclip
 
 
 # initialize
-driver = webdriver.Chrome('C:/usr/chrome/chromedriver_win32 83.0/chromedriver')
-username = 'rafu01'
+#edit this section
+driver = webdriver.Chrome('C:/usr/chrome/chromedriver_win32 83.0/chromedriver') #put chromedriver path here
+username = 'your user name here' #put cf handle here
 
 # start
 driver.get('https://codeforces.com/submissions/'+username)

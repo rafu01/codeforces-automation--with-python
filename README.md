@@ -1,4 +1,4 @@
-# codeforces-automation--with-python
+# codeforces-automation-with-python
 Keeping your solved problems in your github is a great way to showcase your work. But copy pasting all your submissions is hectic and time consuming when you have hundreds of submission. This script will help you to download your codeforces accepted codes to your local directory. It scrapes your submission page and copies all the accepted codes and writes them as a .cpp file. <br/> <br/>
 Featues: <br/>
 1. It doesn't require you to sign up so it's safe <br/>

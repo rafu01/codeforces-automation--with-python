@@ -94,25 +94,28 @@ while(pageno > 0):
     linkget = nameParser(submission)
     index = 0
     for link in sublinks:
-        driver.get('https://codeforces.com'+link)
-        driver.find_element_by_class_name('source-copier').click()
-        code = pyperclip.paste()
-        #     linkget = namePar(link)
-        #     print(linkget)
-        driver.get('https://codeforces.com'+linkget[index])
-        fileName = getRoundName() + ' ' + problemName()
-
-        if(fileName.find('?') != -1):
-            fileName = fileName.replace('?', ' ')
         try:
-            file = open(fileName+" .cpp", "w+")
-            file.write(code)
-            print('success')
+            driver.get('https://codeforces.com'+link)
+            driver.find_element_by_class_name('source-copier').click()
+            code = pyperclip.paste()
+            driver.get('https://codeforces.com'+linkget[index])
+            fileName = getRoundName() + ' ' + problemName()
+            if(fileName.find('?') != -1):
+                fileName = fileName.replace('?', ' ')
+            if(fileName.find(':') != -1):
+                fileName = fileName.replace(':', ' ')
+            try:
+                file = open(fileName+" .cpp", "w+")
+                file.write(code)
+                print('success')
+            except:
+                print('error parsing')
+            index = index+1
         except:
-            print('error parsing one file')
-        index = index+1
+            print('error parsing')
     driver.get('https://codeforces.com/submissions/' +
                username+'/page/'+str(pagenumber))
     pageno = pageno-1
     pagenumber = pagenumber+1
 file.close()
+

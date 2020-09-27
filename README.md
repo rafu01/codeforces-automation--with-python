@@ -4,7 +4,8 @@ Featues: <br/>
 1. It doesn't require you to sign up so it's safe <br/>
 2. Saves the file with proper name <br/> <br/>
 HOW TO USE? <br/>
-Step 1: Copy the full code and save it as a .py file <br/>
+Step 1: clone the repo:
+git clone https://github.com/rafu01/codeforces-automation-with-python <br>
 Step 2: Open it with any text editor <br/> 
 Step 3: run these command one by one in a command propmt <br/>
 pip3 install selenium <br/>
